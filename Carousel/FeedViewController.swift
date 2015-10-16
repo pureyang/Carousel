@@ -17,7 +17,9 @@ class FeedViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        scrollView.contentSize = CGSize(width: feedImageView.image!.size.width, height: feedImageView.image!.size.height)
+        scrollView.contentSize = CGSize(width: feedImageView.image!.size.width, height: 1807
+            //height: feedImageView.image!.size.height
+        )
     }
 
     override func didReceiveMemoryWarning() {

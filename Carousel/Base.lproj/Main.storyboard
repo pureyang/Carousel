@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="yA2-em-cSP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ADV-eC-b07">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -48,7 +48,7 @@
                                         <rect key="frame" x="24" y="1258" width="327" height="57"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="TgE-Lr-Hip" kind="modal" modalTransitionStyle="flipHorizontal" id="tZ6-jq-PfN"/>
+                                            <segue destination="TgE-Lr-Hip" kind="push" id="tZ6-jq-PfN"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -68,7 +68,7 @@
             </objects>
             <point key="canvasLocation" x="694.5" y="406.5"/>
         </scene>
-        <!--Sign In View Controller-->
+        <!--Sign In to DropBox-->
         <scene sceneID="4Hx-lH-F92">
             <objects>
                 <viewController id="TgE-Lr-Hip" customClass="SignInViewController" customModule="Carousel" customModuleProvider="target" sceneMemberID="viewController">
@@ -76,109 +76,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="UvX-az-7rI">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sign_in_nav_bar" id="MCw-dT-dwT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" id="UvX-az-7rI">
+                                <rect key="frame" x="0.0" y="68" width="375" height="599"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="login_form" id="nX8-iv-9Z2">
-                                        <rect key="frame" x="27" y="176" width="320" height="113"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" id="Vpz-fU-BMd">
-                                        <rect key="frame" x="48" y="195" width="278" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" id="FFc-s2-kdO">
-                                        <rect key="frame" x="48" y="240" width="278" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
-                                    </textField>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="create_text" id="eUU-iV-YaB">
-                                        <rect key="frame" x="27" y="94" width="320" height="63"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sign_in_nav_bar" id="MCw-dT-dwT">
-                                        <rect key="frame" x="27" y="0.0" width="320" height="66"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vsV-fU-qe2">
-                                        <rect key="frame" x="36" y="27" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="flipHorizontal" id="Z83-oS-Otf"/>
-                                        </connections>
-                                    </button>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sign_in_buttons" id="daC-GE-d01">
-                                        <rect key="frame" x="27" y="318" width="320" height="104"/>
+                                        <rect key="frame" x="27" y="423" width="320" height="104"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qJh-NC-wBl">
-                                        <rect key="frame" x="48" y="332" width="278" height="45"/>
+                                        <rect key="frame" x="48" y="435" width="278" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="didPressSignIn:" destination="TgE-Lr-Hip" eventType="touchUpInside" id="gJO-pF-BCJ"/>
                                         </connections>
                                     </button>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" id="vWI-ce-syu">
-                                        <rect key="frame" x="267" y="336" width="37" height="37"/>
+                                        <rect key="frame" x="270" y="441" width="37" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </activityIndicatorView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="create_text" id="eUU-iV-YaB">
+                                        <rect key="frame" x="27" y="8" width="320" height="63"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="login_form" id="nX8-iv-9Z2">
+                                        <rect key="frame" x="27" y="94" width="320" height="113"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" id="Vpz-fU-BMd">
+                                        <rect key="frame" x="48" y="113" width="278" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                                        <connections>
+                                            <action selector="didEditBeginEmail:" destination="TgE-Lr-Hip" eventType="editingDidBegin" id="YpK-zQ-TQ2"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" id="FFc-s2-kdO">
+                                        <rect key="frame" x="48" y="158" width="278" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="didEditBeginPassword:" destination="TgE-Lr-Hip" eventType="editingDidBegin" id="Mcf-y1-Enq"/>
+                                            <action selector="didTouchDownPassword:" destination="TgE-Lr-Hip" eventType="touchDown" id="d53-Ir-UoA"/>
+                                        </connections>
+                                    </textField>
                                 </subviews>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vsV-fU-qe2">
+                                <rect key="frame" x="35" y="13" width="36" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="didPressBack:" destination="TgE-Lr-Hip" eventType="touchUpInside" id="Xh6-gN-GOk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="PyF-Ue-E24"/>
+                    <navigationItem key="navigationItem" title="Sign In to DropBox" id="PyF-Ue-E24"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="emailTextField" destination="Vpz-fU-BMd" id="6il-Mk-TVV"/>
                         <outlet property="passwordTextField" destination="FFc-s2-kdO" id="kCy-Wm-Rga"/>
+                        <outlet property="scrollView" destination="UvX-az-7rI" id="9uj-x2-IT9"/>
+                        <outlet property="siginButton" destination="daC-GE-d01" id="oBw-Sk-UGc"/>
                         <outlet property="signInActivityIndicatorView" destination="vWI-ce-syu" id="hZA-sr-4Tu"/>
+                        <outlet property="signInUIButton" destination="qJh-NC-wBl" id="mKT-2L-jaO"/>
                         <segue destination="yA2-em-cSP" kind="modal" identifier="loginSegue" id="vCk-IM-vAL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XDX-g2-Jak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1180.5" y="406.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="sRb-44-z0s">
-            <objects>
-                <viewController id="cyV-8R-lIR" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ruS-fA-DMD">
-                        <rect key="frame" x="0.0" y="0.0" width="640" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="gHA-iT-XuW">
-                                <rect key="frame" x="0.0" y="0.0" width="640" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome1" id="LVO-04-dYo">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome2" id="AXr-Ro-5Q1">
-                                        <rect key="frame" x="320" y="1" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                </subviews>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="640" height="568"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uGB-ub-GUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1978" y="-313"/>
         </scene>
         <!--Tutorial View Controller-->
         <scene sceneID="Grf-0S-zOl">
@@ -378,13 +356,17 @@
         <!--Navigation Controller-->
         <scene sceneID="k7P-Di-5Y4">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ADV-eC-b07" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ADV-eC-b07" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="h1s-8M-fCV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ZpG-Qp-nUd">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iMm-Sa-ZzI"/>
                     </connections>
@@ -441,7 +423,4 @@
         <image name="welcome3" width="320" height="568"/>
         <image name="welcome4" width="320" height="568"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="iMm-Sa-ZzI"/>
-    </inferredMetricsTieBreakers>
 </document>

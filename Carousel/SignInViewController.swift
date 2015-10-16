@@ -9,10 +9,11 @@
 import UIKit
 
 class SignInViewController: UIViewController {
-
-
-    @IBOutlet weak var signInButtonImageView: UIImageView!
     
+    @IBOutlet weak var siginButton: UIImageView!
+    @IBOutlet weak var signInUIButton: UIButton!
+    
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signInActivityIndicatorView: UIActivityIndicatorView!
@@ -35,6 +36,9 @@ class SignInViewController: UIViewController {
         // add the OK action to the alert controller
         alertController.addAction(OKAction)
         alertBadCredentialController.addAction(OKAction)
+        
+        // setup the scroll view to actually scroll
+        scrollView.contentSize = CGSize(width: 375, height: 685)
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,7 +62,7 @@ class SignInViewController: UIViewController {
                     // do noting on completion
                 }
             }
-        } else if (emailTextField.text != "email" || passwordTextField.text != "1234") {
+        } else if (emailTextField.text != "pureyang@gmail.com" || passwordTextField.text != "1234") {
             self.signInActivityIndicatorView.hidden = false
             self.signInActivityIndicatorView.startAnimating()
             delay(2) {
@@ -77,6 +81,31 @@ class SignInViewController: UIViewController {
                 self.performSegueWithIdentifier("loginSegue", sender: nil)
             }
         }
+    }
+    @IBAction func didPressBack(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func didEditBeginEmail(sender: AnyObject) {
+        scrollSignInAboveKeyboard()
+        scrollView.scrollEnabled = true
+    }
+    
+    @IBAction func didEditBeginPassword(sender: AnyObject) {
+        scrollSignInAboveKeyboard()
+        scrollView.scrollEnabled = true
+    }
+    
+    func scrollSignInAboveKeyboard() {
+        // scroll to hide tip
+        scrollView.contentOffset = CGPoint(x: 0, y: 85)
+        // move button up
+        UIView.animateWithDuration(0.3) { () ->
+            Void in
+            self.siginButton.center.y = 380
+        }
+        self.signInActivityIndicatorView.center.y = 365
+        self.signInUIButton.center.y = 365
     }
     /*
     // MARK: - Navigation
