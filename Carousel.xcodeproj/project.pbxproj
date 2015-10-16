@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A448BA5B1BD0B09C00B7A8F5 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A448BA5A1BD0B09C00B7A8F5 /* TutorialViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A448BA5D1BD0C3C000B7A8F5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A448BA5C1BD0C3C000B7A8F5 /* FeedViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A448BA5F1BD0C67500B7A8F5 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A448BA5E1BD0C67500B7A8F5 /* ConversationsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A448BA611BD0CBDF00B7A8F5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A448BA601BD0CBDF00B7A8F5 /* SettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A45886051BCE1AC600218942 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45886041BCE1AC600218942 /* SignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A4EA9CAC1BCDC5C800A3D239 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA9CAB1BCDC5C800A3D239 /* AppDelegate.swift */; };
-		A4EA9CAE1BCDC5C800A3D239 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA9CAD1BCDC5C800A3D239 /* ViewController.swift */; };
 		A4EA9CB11BCDC5C800A3D239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EA9CAF1BCDC5C800A3D239 /* Main.storyboard */; };
 		A4EA9CB31BCDC5C800A3D239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4EA9CB21BCDC5C800A3D239 /* Assets.xcassets */; };
 		A4EA9CB61BCDC5C800A3D239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EA9CB41BCDC5C800A3D239 /* LaunchScreen.storyboard */; };
 		A4EA9CC11BCDC5C800A3D239 /* CarouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA9CC01BCDC5C800A3D239 /* CarouselTests.swift */; };
 		A4EA9CCC1BCDC5C800A3D239 /* CarouselUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA9CCB1BCDC5C800A3D239 /* CarouselUITests.swift */; };
+		A4EA9CDA1BCDCB0E00A3D239 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA9CD91BCDCB0E00A3D239 /* Common.swift */; settings = {ASSET_TAGS = (); }; };
+		A4EA9CDC1BCDCBBB00A3D239 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA9CDB1BCDCBBB00A3D239 /* IntroViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A448BA5A1BD0B09C00B7A8F5 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		A448BA5C1BD0C3C000B7A8F5 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		A448BA5E1BD0C67500B7A8F5 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		A448BA601BD0CBDF00B7A8F5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A45886041BCE1AC600218942 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A4EA9CA81BCDC5C800A3D239 /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EA9CAB1BCDC5C800A3D239 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4EA9CAD1BCDC5C800A3D239 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A4EA9CB01BCDC5C800A3D239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4EA9CB21BCDC5C800A3D239 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4EA9CB51BCDC5C800A3D239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +57,8 @@
 		A4EA9CC71BCDC5C800A3D239 /* CarouselUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarouselUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EA9CCB1BCDC5C800A3D239 /* CarouselUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselUITests.swift; sourceTree = "<group>"; };
 		A4EA9CCD1BCDC5C800A3D239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4EA9CD91BCDCB0E00A3D239 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		A4EA9CDB1BCDCBBB00A3D239 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +109,9 @@
 		A4EA9CAA1BCDC5C800A3D239 /* Carousel */ = {
 			isa = PBXGroup;
 			children = (
+				A4EA9CDD1BCDCBC000A3D239 /* ViewControllers */,
+				A4EA9CD91BCDCB0E00A3D239 /* Common.swift */,
 				A4EA9CAB1BCDC5C800A3D239 /* AppDelegate.swift */,
-				A4EA9CAD1BCDC5C800A3D239 /* ViewController.swift */,
 				A4EA9CAF1BCDC5C800A3D239 /* Main.storyboard */,
 				A4EA9CB21BCDC5C800A3D239 /* Assets.xcassets */,
 				A4EA9CB41BCDC5C800A3D239 /* LaunchScreen.storyboard */,
@@ -123,6 +136,19 @@
 				A4EA9CCD1BCDC5C800A3D239 /* Info.plist */,
 			);
 			path = CarouselUITests;
+			sourceTree = "<group>";
+		};
+		A4EA9CDD1BCDCBC000A3D239 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA9CDB1BCDCBBB00A3D239 /* IntroViewController.swift */,
+				A45886041BCE1AC600218942 /* SignInViewController.swift */,
+				A448BA5A1BD0B09C00B7A8F5 /* TutorialViewController.swift */,
+				A448BA5C1BD0C3C000B7A8F5 /* FeedViewController.swift */,
+				A448BA5E1BD0C67500B7A8F5 /* ConversationsViewController.swift */,
+				A448BA601BD0CBDF00B7A8F5 /* SettingsViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,8 +281,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4EA9CAE1BCDC5C800A3D239 /* ViewController.swift in Sources */,
+				A4EA9CDA1BCDCB0E00A3D239 /* Common.swift in Sources */,
 				A4EA9CAC1BCDC5C800A3D239 /* AppDelegate.swift in Sources */,
+				A448BA5F1BD0C67500B7A8F5 /* ConversationsViewController.swift in Sources */,
+				A448BA5B1BD0B09C00B7A8F5 /* TutorialViewController.swift in Sources */,
+				A45886051BCE1AC600218942 /* SignInViewController.swift in Sources */,
+				A448BA5D1BD0C3C000B7A8F5 /* FeedViewController.swift in Sources */,
+				A4EA9CDC1BCDCBBB00A3D239 /* IntroViewController.swift in Sources */,
+				A448BA611BD0CBDF00B7A8F5 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +513,7 @@
 				A4EA9CD21BCDC5C800A3D239 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4EA9CD31BCDC5C800A3D239 /* Build configuration list for PBXNativeTarget "CarouselTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +522,7 @@
 				A4EA9CD51BCDC5C800A3D239 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4EA9CD61BCDC5C800A3D239 /* Build configuration list for PBXNativeTarget "CarouselUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +531,7 @@
 				A4EA9CD81BCDC5C800A3D239 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
