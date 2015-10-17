@@ -66,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="694.5" y="406.5"/>
+            <point key="canvasLocation" x="677.5" y="405.5"/>
         </scene>
         <!--Sign In to DropBox-->
         <scene sceneID="4Hx-lH-F92">
@@ -351,7 +351,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lom-gP-FSb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4422.5" y="827.5"/>
+            <point key="canvasLocation" x="4954.5" y="827.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="k7P-Di-5Y4">
@@ -375,6 +375,63 @@
             </objects>
             <point key="canvasLocation" x="162" y="406"/>
         </scene>
+        <!--Scrolling Intro View Controller-->
+        <scene sceneID="OcW-p4-BS0">
+            <objects>
+                <viewController id="LvK-Ya-bGt" customClass="ScrollingIntroViewController" customModule="Carousel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B8a-J1-oz8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1340"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="MFQ-pE-hpp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1340"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="intro" id="QFF-6s-FWB">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1343"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile1" id="b6Q-OZ-wFz">
+                                        <rect key="frame" x="14" y="496" width="153" height="152"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile3" id="hYI-xo-b4T">
+                                        <rect key="frame" x="168" y="509" width="76" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile4" id="zpM-BI-cBi">
+                                        <rect key="frame" x="264" y="573" width="76" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile2" id="fOQ-AI-2Cv">
+                                        <rect key="frame" x="158" y="573" width="76" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile5" id="wU3-bv-bMS">
+                                        <rect key="frame" x="252" y="501" width="76" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile6" id="Usi-Fq-Cqf">
+                                        <rect key="frame" x="214" y="574" width="76" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Esy-ab-9PM"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1340"/>
+                    <connections>
+                        <outlet property="image1View" destination="b6Q-OZ-wFz" id="kIc-1F-7Ti"/>
+                        <outlet property="scrollView" destination="MFQ-pE-hpp" id="DbP-SY-HTL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rRM-Lp-bXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806.5" y="1958.5"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="GCa-TT-rg4">
             <objects>
@@ -397,6 +454,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dr3-MJ-hOk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3320" y="406"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="92z-IR-slq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="loJ-77-9Dl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d3f-4w-5sT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LvK-Ya-bGt" kind="relationship" relationship="rootViewController" id="fRf-YP-HxD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PW3-Rh-Krd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176" y="1146"/>
         </scene>
     </scenes>
     <resources>

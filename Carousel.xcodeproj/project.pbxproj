@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A414626B1BD1C41A00E19577 /* ScrollingIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414626A1BD1C41A00E19577 /* ScrollingIntroViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A448BA5B1BD0B09C00B7A8F5 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A448BA5A1BD0B09C00B7A8F5 /* TutorialViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A448BA5D1BD0C3C000B7A8F5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A448BA5C1BD0C3C000B7A8F5 /* FeedViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A448BA5F1BD0C67500B7A8F5 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A448BA5E1BD0C67500B7A8F5 /* ConversationsViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A414626A1BD1C41A00E19577 /* ScrollingIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingIntroViewController.swift; sourceTree = "<group>"; };
 		A448BA5A1BD0B09C00B7A8F5 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		A448BA5C1BD0C3C000B7A8F5 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		A448BA5E1BD0C67500B7A8F5 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		A4EA9CDD1BCDCBC000A3D239 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A414626A1BD1C41A00E19577 /* ScrollingIntroViewController.swift */,
 				A4EA9CDB1BCDCBBB00A3D239 /* IntroViewController.swift */,
 				A45886041BCE1AC600218942 /* SignInViewController.swift */,
 				A448BA5A1BD0B09C00B7A8F5 /* TutorialViewController.swift */,
@@ -287,6 +290,7 @@
 				A448BA5B1BD0B09C00B7A8F5 /* TutorialViewController.swift in Sources */,
 				A45886051BCE1AC600218942 /* SignInViewController.swift in Sources */,
 				A448BA5D1BD0C3C000B7A8F5 /* FeedViewController.swift in Sources */,
+				A414626B1BD1C41A00E19577 /* ScrollingIntroViewController.swift in Sources */,
 				A4EA9CDC1BCDCBBB00A3D239 /* IntroViewController.swift in Sources */,
 				A448BA611BD0CBDF00B7A8F5 /* SettingsViewController.swift in Sources */,
 			);

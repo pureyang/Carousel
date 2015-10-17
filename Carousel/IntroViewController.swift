@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IntroViewController: UIViewController {
+class IntroViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var introScrollView: UIScrollView!
     
@@ -18,7 +18,8 @@ class IntroViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        //introScrollView.contentSize = welcomeImageView.image!.size
+        introScrollView.delegate = self
+
         introScrollView.contentSize = CGSize(width: 375, height: 1343)
     }
 
@@ -35,6 +36,11 @@ class IntroViewController: UIViewController {
     override func viewWillDisappear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         super.viewWillAppear(animated);
+    }
+    
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        // This method is called as the user scrolls
+        
     }
 
 }
